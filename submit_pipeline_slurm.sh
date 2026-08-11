@@ -35,7 +35,7 @@ QC_PLOT_DIR="${OUT_DIR}/qc_plots"  # where qc_plotter.py writes its figures
 # into OUT_DIR, which qc_plotter.py then reads from there — no extra paths needed.
 
 # --- Slurm ---
-SBATCH_ACCOUNT="pughlab"
+SBATCH_ACCOUNT="" ### state the partition or group account you intend to use e.g. pughlab,  all, himem etc..
 SBATCH_PARTITION="all"
 SBATCH_EXTRACT_TIME="04:00:00"
 SBATCH_EXTRACT_MEM="8G"
