@@ -162,7 +162,7 @@ java -Xmx${SBATCH_MIXCR_MEM} -Djava.io.tmpdir=${TMPDIR} -jar ${MIXCR_JAR} assemb
     -r ${LOG_DIR}/LOG_ASSEMBLE_${SAMPLE}.txt \\
     ${MIXCR_DIR}/extended_${SAMPLE}.vdjca \\
     ${MIXCR_DIR}/${SAMPLE}.clns
-
+# ========================= For IG change to IGH, IGK, IGL 
 echo "Exporting clones for ${SAMPLE}..."
 java -Xmx${SBATCH_MIXCR_MEM} -Djava.io.tmpdir=${TMPDIR} -jar ${MIXCR_JAR} exportClones \\
     -o -t --chains TRA,TRB,TRG,TRD \\
