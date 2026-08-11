@@ -135,8 +135,8 @@ read from the log files directly — MiXCR log parsing strips the `(xx.x%)`
 annotations down to the underlying count, so the percentage is derived as
 `count / Total sequencing reads * 100`.
 
-## Notes / known limitations
-
+## Notes 
+- For IG capture change the clones export command to IGH, IGK, IGL 
 - `parse_and_merge_qc.py` expects one MiXCR align log and one assemble log
   per sample folder; if either is missing it logs a warning and continues.
 - `qc_plotter.py` degrades gracefully (skips the affected plot/column with a
